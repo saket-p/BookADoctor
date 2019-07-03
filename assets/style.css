@@ -1,14 +1,14 @@
 :root {
-    --lightGrey: #A8A7A8;
-    --mediumGrey: #474747;
-    --largeGrey: #363636;
+    --white1: #fcfcfc;
+    --white2: #f9f9f9;
+    --lightGrey: #F0F0F0;
+    --mediumGrey: #A8A7A8;
+    --darkGrey: #363636;
     --blue: #2F9395;
     --yellow: #F7D969;
     --orange: #F16A43;
     --red: #E8175D;
     --magenta: #A6206A;
-    --grid-item-width: 300px; 
-    --wrapper-sidespace: calc(45vw - var(--grid-item-width))
 }
 
 html {
@@ -28,55 +28,127 @@ body {
     line-height: calc(1.1em + 0.5vw);
 }
 
+.shadow {
+    -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.noshow {
+    display: none !important;
+}
+
 .wrapper {
     display: grid;
-    min-height: calc(100vh - 2em);
-    background-color: var(--lightGrey);
+    background-color: var(--white1);
     margin: 2rem;
-    padding: 10vh var(--wrapper-sidespace) 10vh var(--wrapper-sidespace);;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, var(--grid-item-width));
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 2rem);
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
-.counter {
-    align-self: end;
+.bookAppointment {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
 }
 
-#counter3 {
-    grid-column: 1 /-1;
-    align-self: start;
-}
+.bookAppointment > section {margin-bottom: 2em;}
 
-.counter .counterVal {
-    text-align: center;
-    background-color: var(--largeGrey);
-    border-radius: 3px 3px 0px 0px;
-    color: #fff;
-    padding: 1rem 0 1rem 0;
-}
-
-.counter .controls {
+.city {
     display: flex;
 }
 
-.controls button {
-    width: 50%;
+.city h1 {
     flex: 1;
-    padding: 1rem 0 1rem 0;
-    border: 0;
-    cursor: pointer;
 }
 
-button.increase {
-    background-color: var(--blue);
+.city .selectCity {
+    flex: 0 1 auto;
 }
 
-button.decrease {
-    background-color: var(--orange);
+.filterContainers {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-button.reset {
-    background-color: var(--red);
+.sort {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "figure"
+        "details"
+        "slot"
+        "price";
+    background: var(--white2);
+    place-items: center;
+    justify-content: space-between;
+    align-items: start;
+    border: 1px solid var(--lightGrey);
+    grid-gap: 10px;
+    margin-bottom: 1em;
+}
+
+.result>*,
+.result p {
+    margin: 0;
+    padding: 0;
+}
+
+.result__img {
+    grid-area: figure;
+    height: 150px;
+}
+
+.result__details {
+    grid-area: details;
+}
+
+.result__details p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    height: 3em;
+    /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+}
+
+.result__price {
+    grid-area: price;
+    justify-self: end;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.4em;
+    padding-right: 0.3em;
+}
+
+.result__slots {
+    grid-area: slot;
+    justify-self: start;
+    border-top: 2px solid #fff;
+    width: 100%;
+    padding: 0.4em;
+}
+
+.result__img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .result {
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 150px 50px;
+        grid-template-areas:
+            "figure details price"
+            "slot slot slot";
+    }
 }

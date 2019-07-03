@@ -10,12 +10,20 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="counter1" class="counter">
-        </div>
-        <div id="counter2" class="counter">
-        </div>
-        <div id="counter3" class="counter">
-        </div>
+       <article class="bookAppointment shadow noshow">
+           <section class="controls">
+           </section>
+           <section class="resultContainer">
+               <div class="sort">
+                    <button class="btnSort">Sort</button>
+               </div>
+               <article class="results"></article>
+               </article>
+           </section>
+       </article>
+       <div class="spinner">
+           <img src="./assets/spinner.gif" alt="loading.." class="loading">
+       </div>
     </div>
     <script type="module" src="index.js"></script>
     <script nomodule src="bundle.es5.js"></script>

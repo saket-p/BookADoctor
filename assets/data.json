@@ -1,0 +1,145 @@
+{
+    "cities": [{
+            "id": 1,
+            "name": "Bangalore"
+        },
+        {
+            "id": 2,
+            "name": "Lucknow"
+        }
+    ],
+    "localities": [{
+            "id": 1,
+            "cityId": 1,
+            "name": "Koramangala"
+        },
+        {
+            "id": 2,
+            "cityId": 1,
+            "name": "Indiranagar"
+        },
+        {
+            "id": 3,
+            "cityId": 1,
+            "name": "Whitefield"
+        },
+        {
+            "id": 4,
+            "cityId": 2,
+            "name": "Aliganj"
+        },
+        {
+            "id": 5,
+            "cityId": 2,
+            "name": "Gomtinagar"
+        }
+    ],
+    "timeSlots": [{
+            "name": "Morning",
+            "value": ["6-9", "9-12"]
+        },
+        {
+            "name": "Afternoon",
+            "value": ["12-15", "15-18"]
+        },
+        {
+            "name": "Evening",
+            "value": ["18-21"]
+        },
+        {
+            "name": "Night",
+            "value": ["21-24"]
+        }
+    ],
+    "medicalCenters": [{
+            "name": "Apollo Spectra Hospitals",
+            "address": "Koramangala 5 Block, Bangalore",
+            "type": "Multi-Speciality Hospital",
+            "price": "600",
+            "localityId": 1,
+            "slots": ["6-9", "9-12", "12-15", "15-18", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/practices/1134531/apollo-spectra-hospitals-bangalore-5c8120f354e1a.png/thumbnail"
+        },
+        {
+            "name": "Growing Up Children's Clinic ",
+            "address": "27, 1st Floor, 7th Cross Road, 17th B Main, 6th Block, Landmark: Near Kormangala Club, Bangalore",
+            "type": "Multi-Speciality Clinic",
+            "price": "1500",
+            "localityId": 1,
+            "slots": ["6-9", "9-12", "12-15", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/practices/808840/growing-up-children-s-clinic-bangalore-58e382d510291.png"
+        },
+        {
+            "name": "First Eat Right Clinic",
+            "address": "Regus Business Centre, Pine Valley Building, 1st Floor, Landmark: Near Embassy Golf-links Business Park, Bangalore",
+            "type": "Dietitian/Nutritionist Clinic",
+            "price": "700",
+            "localityId": 2,
+            "slots": ["9-12", "12-15", "15-18", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/practices/780202/first-eat-right-clinic-bangalore-597076f0ab146.png"
+        },
+        {
+            "name": "Carefit Medical And Diagnostic Centre",
+            "address": "MM Enclave, 31, 80 Feet Rd, HAL 3rd Stage, Indiranagar, Landmark: Opposite Madurai Idly Shop, Bangalore",
+            "type": "Multi-Speciality Clinic",
+            "price": "650",
+            "localityId": 2,
+            "slots": ["6-9", "9-12", "12-15", "21-22"],
+            "image": "https://images1-fabric.practo.com/practices/1246055/carefit-medical-and-diagnostic-centre-bangalore-5c960f7f41756.jpg/medium"
+        },
+        {
+            "name": "Keva Ayurveda",
+            "address": "386/A, 5th A Cross, 8th Main, BEML Layout, Thubarahalli, Whitefield Post, Landmark: Opposite Ramdev Sagar Restaurent, Bangalore",
+            "type": "Multi-Speciality Clinic",
+            "price": "350",
+            "localityId": 3,
+            "slots": ["6-9", "9-12"],
+            "image": "https://images1-fabric.practo.com/practices/697440/keva-ayurveda-bangalore-58e36a7b75154.jpg/medium"
+        },
+        {
+            "name": "Hairline International Hair & Skin Clinic",
+            "address": "32, MCC Tower, Varthur Kodi, Varthur Kodi, Ramagondanahalli, Landmark: Opposite Sigma Tech Park, Bangalore",
+            "type": "Hair Transplant Surgery, Dermatology Clinic",
+            "price": "500",
+            "localityId": 3,
+            "slots": ["12-15", "15-18", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/hairline-international-hair-clinic-whitefield-bangalore-1470632223-57a8111febcbb.jpg/medium"
+        },
+        {
+            "name": "Addlife - Diet Clinic",
+            "address": "50/4, Wazir Hasan Road, Landmark: Opposite Tivoli Appartment, Lucknow",
+            "type": "Dietitian/Nutritionist Clinic",
+            "price": "1800",
+            "localityId": 4,
+            "slots": ["6-9", "9-12", "21-22"],
+            "image": "https://images1-fabric.practo.com/addlife-diet-clinic-lucknow-1476104839-57fb928746608.jpg/medium"
+        },
+        {
+            "name": "JIVA Ayurveda",
+            "address": "LGF1, Ramanand Trade Centre 34A, Chandralok, Landmark: Near Spencer On Aliganj Kapurthala Road, Lucknow",
+            "type": "Ayurveda Clinic",
+            "price": "200",
+            "localityId": 4,
+            "slots": ["6-9", "9-12", "12-15", "15-18", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/practices/1183043/jiva-ayurveda-lucknow-5ab47e0848159.jpg/medium"
+        },
+        {
+            "name": "St. Joseph's Hospital",
+            "address": "Gomti Nagar Bypass Road, CMS Road, Vishal Khand - 5, Captain Manoj Pandey Chauraha, Gomtinagar, Lucknow",
+            "type": "Multi-Speciality Hospital",
+            "price": "150",
+            "localityId": 5,
+            "slots": ["18-21"],
+            "image": "https://images1-fabric.practo.com/st-joseph-s-hospital-lucknow-1479295450-582c41daa218c.jpg/medium"
+        },
+        {
+            "name": "Radius Joint Surgery Hospital",
+            "address": "2/2, Vishesh Khand 2, Picup Bhawan Road, Side Lane Shaheed Path, Gomtinagar, Lucknow",
+            "type": "Multi-Speciality Hospital",
+            "price": "700",
+            "localityId": 5,
+            "slots": ["6-9", "9-12", "18-21", "21-22"],
+            "image": "https://images1-fabric.practo.com/radius-hospital-1449852585-566afea947f2c.jpg/medium"
+        }
+    ]
+}

@@ -1,9 +1,33 @@
 const initialState = {
-    counter1: {
-        value: 0
+    cities: {
+        value: null
     },
-    counter2: {
-        value: 0
+    selectedCity: {
+        value: null
+    },
+    localities: {
+        value: null
+    },
+    selectedLocality: {
+        value: null
+    },
+    timeSlots: {
+        value: ['Morning', 'Afternoon', 'Evening', 'Night']
+    },
+    selectedTime: {
+        value: null
+    },
+    sortOrder: {
+        value: null
+    },
+    results: {
+        value: null
+    },
+    bookedResult: {
+        value: null
+    },
+    allResults: {
+        value: null
     }
 };
 
